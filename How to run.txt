@@ -1,0 +1,8 @@
+write your file location after cs in cmd
+cd C:\Users\Nazish\Desktop\Aarogya
+python app.py
+
+
+
+
+

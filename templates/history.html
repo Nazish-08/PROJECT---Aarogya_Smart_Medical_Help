@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+{% block content %}
+
+<h2 class="mb-4">Your Health History</h2>
+
+{% if history %}
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Symptoms</th>
+            <th>Disease Predicted</th>
+            <th>Medicines</th>
+            <th>Doctor Suggested</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for record in history %}
+        <tr>
+            <td>{{ record.date }}</td>
+            <td>{{ record.symptoms }}</td>
+            <td>{{ record.disease }}</td>
+            <td>{{ record.medicines }}</td>
+            <td>{{ record.doctors }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% else %}
+<p>No history found.</p>
+{% endif %}
+
+{% endblock %}

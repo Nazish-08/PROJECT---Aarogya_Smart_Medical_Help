@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aarogya – Smart Medical Help</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: #f4f8fb;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .navbar-brand {
+      font-weight: bold;
+    }
+    .card {
+      border-radius: 16px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+      background-color: #ffffff;
+    }
+    .form-label {
+      font-weight: 500;
+    }
+    .btn-primary {
+      background-color: #0d6efd;
+      border: none;
+    }
+    .btn-primary:hover {
+      background-color: #0b5ed7;
+    }
+    .hero-section {
+      padding: 60px 20px 40px;
+      display: flex;
+      justify-content: center;
+    }
+    .cards-section {
+      padding: 0 40px 60px;
+    }
+    footer {
+      text-align: center;
+      color: #888;
+      font-size: 14px;
+      padding-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ✅ Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+  <div class="container">
+    <a class="navbar-brand" href="/">🩺 Aarogya</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav me-3">
+        <li class="nav-item"><a class="nav-link active" href="/">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/about">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+      </ul>
+      {% if username %}
+        <span class="text-light me-3">Welcome, {{ username }}</span>
+        <a href="/logout" class="btn btn-outline-light btn-sm">Logout</a>
+      {% else %}
+        <a href="/login" class="btn btn-outline-light btn-sm me-2">Login</a>
+        <a href="/register" class="btn btn-light btn-sm">Register</a>
+      {% endif %}
+    </div>
+  </div>
+</nav>
+
+<!-- ✅ Hero Form Section -->
+<section class="hero-section">
+  <div class="card shadow p-5" style="width: 100%; max-width: 720px;">
+    <div class="text-center mb-3">
+      <div style="font-size: 2rem;">🩺</div>
+      <h2 class="fw-bold">Aarogya – Smart Medical Help</h2>
+      <p class="text-muted mt-2">
+        Enter your symptoms below to get disease prediction,<br>
+        medicine suggestions, and doctor advice.
+      </p>
+    </div>
+
+    <form method="POST" action="/predict">
+      <div class="mb-4">
+        <label for="symptoms" class="form-label fw-semibold">Enter Symptoms</label>
+        <input type="text" class="form-control form-control-lg" name="symptoms" id="symptoms"
+               placeholder="e.g. fever, cough, headache" required>
+      </div>
+
+      <div class="d-grid">
+        <button type="submit" class="btn btn-primary btn-lg">🔍 Diagnose Me</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- ✅ Cards Section -->
+<section class="cards-section">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+    <div class="col">
+      <div class="card h-100 border-0 shadow-sm">
+        <div class="card-body text-center">
+          <h5 class="card-title">⚡ Instant Prediction</h5>
+          <p class="card-text">Get fast and accurate disease predictions based on your symptoms.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 border-0 shadow-sm">
+        <div class="card-body text-center">
+          <h5 class="card-title">💊 Smart Medicine</h5>
+          <p class="card-text">Get AI-recommended medicines with dosage and side effects info.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100 border-0 shadow-sm">
+        <div class="card-body text-center">
+          <h5 class="card-title">👨‍⚕️ Trusted Doctors</h5>
+          <p class="card-text">View expert doctors near you with contact and visit details.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ✅ Footer -->
+<footer>
+  © 2025 Aarogya Health – All rights reserved.
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

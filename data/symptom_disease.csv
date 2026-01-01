@@ -1,0 +1,62 @@
+symptom,disease
+fever,Flu
+cough,Flu
+headache,Flu
+sore throat,Throat Infection
+swollen tonsils,Throat Infection
+chest pain,Heart Problem
+shortness of breath,Heart Problem
+palpitations,Heart Problem
+fatigue,Anemia
+pale skin,Anemia
+dizziness,Anemia
+rash,Allergy
+sneezing,Allergy
+itchy eyes,Allergy
+vomiting,Food Poisoning
+diarrhea,Food Poisoning
+stomach pain,Food Poisoning
+acidity,Acidity
+heartburn,Acidity
+cold,Common Cold
+runny nose,Common Cold
+sneezing,Common Cold
+back pain,Muscle Strain
+joint pain,Arthritis
+swelling,Arthritis
+shortness of breath,Asthma
+wheezing,Asthma
+tremors,Asthma
+burning urination,Urinary Tract Infection
+frequent urination,Urinary Tract Infection
+weight loss,Tuberculosis
+night sweats,Tuberculosis
+persistent cough,Tuberculosis
+excessive thirst,Diabetes
+frequent urination,Diabetes
+blurred vision,Diabetes
+high blood pressure,Hypertension
+headache,Hypertension
+chest pain,Hypertension
+persistent sadness,Depression
+insomnia,Depression
+loss of interest,Depression
+chills,Malaria
+fever,Malaria
+nausea,Malaria
+loss of taste,COVID-19
+fever,COVID-19
+cough,COVID-19
+joint pain,Gout
+swelling,Gout
+redness,Gout
+memory loss,Alzheimer's
+confusion,Alzheimer's
+difficulty speaking,Alzheimer's
+tremor,Parkinson's
+stiff muscles,Parkinson's
+balance issues,Parkinson's
+hair loss,Cancer
+weight loss,Cancer
+fatigue,Cancer
+bleeding,Cancer

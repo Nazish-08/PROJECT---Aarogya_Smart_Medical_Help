@@ -1,0 +1,16 @@
+doctor_name,specialization,location,contact,disease
+Dr. A Sharma,General Physician,Mumbai,9876543210,Flu
+Dr. B Mehta,Cardiologist,Mumbai,9876543211,Heart Problem
+Dr. C Iyer,Dermatologist,Navi Mumbai,9876543212,Allergy
+Dr. D Khan,ENT Specialist,Thane,9876543213,Throat Infection
+Dr. E Patil,Pediatrician,Mumbai,9876543214,Common Cold
+Dr. F Rao,Gastroenterologist,Mumbai,9876543215,Acidity
+Dr. G Nair,Neurologist,Navi Mumbai,9876543216,Migraine
+Dr. H Singh,Orthopedic Surgeon,Mumbai,9876543217,Muscle Strain
+Dr. I Fernandes,Oncologist,Thane,9876543218,Cancer
+Dr. J Joshi,Endocrinologist,Mumbai,9876543219,Diabetes
+Dr. K Kapoor,General Physician,Navi Mumbai,9876543220,Common Cold
+Dr. L Gupta,Ophthalmologist,Mumbai,9876543221,Eye Infection
+Dr. M Das,Psychiatrist,Thane,9876543222,Depression
+Dr. N Choudhary,Dentist,Mumbai,9876543223,Toothache
+Dr. O Bhosale,Nephrologist,Navi Mumbai,9876543224,Urinary Tract Infection
